@@ -1,6 +1,6 @@
 ﻿namespace NetProgPractices.Models
 {
-    public class TestService
+    public class TestService : ITestService 
     {
 
         public Student getStudent ()
@@ -12,6 +12,11 @@
 
             return newStudent;
 
+        }
+
+        public string getStudentName(int id)
+        {
+            return "Carlos Cristóbal";
         }
 
     }
